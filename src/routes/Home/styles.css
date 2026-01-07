@@ -1,0 +1,16 @@
+#gp-section {
+  padding: 1.6rem 2.8rem;
+}
+
+@media (max-width: 576px) {
+  #gp-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .gp-data-home {
+    text-align: center;
+    justify-content: center;
+  }
+}

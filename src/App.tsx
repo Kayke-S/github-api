@@ -1,8 +1,10 @@
+import Home from "./routes/Home";
+
 export default function App() {
 
   return (
     <>
-     <h1>oi</h1>
+     <Home />
     </>
   )
 }

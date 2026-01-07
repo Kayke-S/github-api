@@ -11,6 +11,7 @@
   --gp-font-color-tertiary: #1890ff;
   --gp-font-color-quaternary: #bfbfbf;
   --gp-font-color-quinary: #5c5858;
+  --gp-font-color-senary: #fff;
 
   --gp-font-bold: 700;
   --gp-font-semi-bold: 500;
@@ -26,4 +27,29 @@ a:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--gp-font-color-senary);
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--gp-font-color-primary);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--gp-font-color-secondary);
+}
+
+.gp-container {
+  
+}
+
+.gp-mb27 {
+  margin-bottom: 27px;
+}
+
