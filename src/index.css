@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --gp-bg-color-primary: #1890ff;
+  --gp-bg-color-secondary: #ffffff;
+  --gp-bg-color-tertiary: #e6f7ff;
+  --gp-bg-color-quaternary: #f5f5f5;
+
+  --gp-font-color-primary: #000000;
+  --gp-font-color-secondary: #7e7e7e;
+  --gp-font-color-tertiary: #1890ff;
+  --gp-font-color-quaternary: #bfbfbf;
+  --gp-font-color-quinary: #5c5858;
+
+  --gp-font-bold: 700;
+  --gp-font-semi-bold: 500;
+}
+
+a,
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
