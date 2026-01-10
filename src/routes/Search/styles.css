@@ -1,0 +1,31 @@
+form h2 {
+    font-size: 2.3rem;
+    font-weight: var(--gp-font-semi-bold);
+}
+
+form input {
+    width: 298px;
+    height: 40px;
+    padding: 8px 17px;
+    border: 1px solid var(--gp-border-color-primary);
+    border-radius: 4px;
+}
+
+form input::placeholder {
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+}
+
+#gp-section-form {
+    padding: 54px 0;
+}
+
+.gp-form-container {
+  background-color: var(--gp-bg-color-tertiary);
+  height: 270px;
+  padding: 54px 31px;
+  border-radius: 1rem;
+}
