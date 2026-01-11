@@ -12,6 +12,7 @@
   --gp-font-color-quaternary: #bfbfbf;
   --gp-font-color-quinary: #5c5858;
   --gp-font-color-senary: #fff;
+  --gp-font-color-septenary: #262626;
 
   --gp-border-color-primary: #d9d9d9;
 
@@ -21,7 +22,6 @@
 
 a,
 a:hover {
-  color: unset;
   text-decoration: none;
 }
 
@@ -42,10 +42,6 @@ h2 {
   color: var(--gp-font-color-primary);
 }
 
-h3 {
-  font-size: 2rem;
-  color: var(--gp-font-color-secondary);
-}
 
 .gp-container {
   width: 100%;
@@ -55,6 +51,14 @@ h3 {
 
 .gp-mb27 {
   margin-bottom: 27px;
+}
+
+.gp-mb54 {
+  margin-bottom: 54px;
+}
+
+.gp-mr30 {
+  margin-right: 30px;
 }
 
 .gp-pb12 {
@@ -75,4 +79,8 @@ h3 {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+}
+
+.gp-fntBold {
+  font-weight: var(--gp-font-bold);
 }

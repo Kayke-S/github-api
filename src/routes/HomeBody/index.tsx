@@ -9,7 +9,7 @@ export default function HomeBody() {
         <section id="gp-section">
           <div className="gp-data-home">
             <h2>Desafio Github API</h2>
-            <h3 className="gp-mb27">DevSuperior - Escola de programação</h3>
+            <p className="gp-mb27">DevSuperior - Escola de programação</p>
             <Button title="Começar" route="search" />
           </div>
         </section>

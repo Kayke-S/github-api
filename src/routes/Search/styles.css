@@ -1,6 +1,7 @@
 form h2 {
     font-size: 2.3rem;
     font-weight: var(--gp-font-semi-bold);
+    color: var(--gp-font-color-septenary);
 }
 
 form input {

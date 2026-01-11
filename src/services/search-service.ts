@@ -15,4 +15,6 @@ export async function getProfile(username: string) {
   } catch (error) {
     console.log(error);
   }
+
+  return null;
 }

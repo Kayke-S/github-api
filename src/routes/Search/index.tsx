@@ -4,6 +4,7 @@ import Button from "../../components/Button";
 import "./styles.css";
 import * as searchService from "../../services/search-service";
 import GitProfile from "../../model/git-profile";
+import Card from "../../components/Card";
 
 export default function Search() {
   const [input, setInput] = useState<string>("");
@@ -11,21 +12,17 @@ export default function Search() {
   const [gitProfile, setProfile] = useState<GitProfile>();
   const [errorMessage, setError] = useState<string>();
 
-  console.log(gitProfile);
-  console.log(errorMessage);
-
   return (
     <>
       <main>
         <section id="gp-section-form">
-          <div className="gp-container gp-form-container">
+          <div className="gp-container gp-form-container gp-mb54">
             <form>
               <div className="gp-pb12">
                 <h2>Encontre um perfil Github</h2>
               </div>
               <div className="gp-pb12">
                 <input
-                  id="search"
                   value={input}
                   type="text"
                   placeholder="Usuário Github"
@@ -38,9 +35,21 @@ export default function Search() {
             </form>
           </div>
 
-          {
-            gitProfile && <h2>{gitProfile.name}</h2>
-          }
+          <div className="gp-container">
+            {gitProfile != null ? (
+              <Card gitProfile={gitProfile} />
+            ) : (
+              <div
+                style={{
+                  fontSize: "2.3rem",
+                  fontWeight: "var(--gp-font-semi-bold)",
+                  color: "var(--gp-font-color-septenary)",
+                }}
+              >
+                {errorMessage}
+              </div>
+            )}
+          </div>
         </section>
       </main>
     </>
@@ -57,7 +66,7 @@ export default function Search() {
     if (input != null && input != "") {
       const response = await searchService.getProfile(input);
 
-      if (response instanceof GitProfile) {
+      if (response != null) {
         setProfile(response);
         setError(undefined);
       } else {

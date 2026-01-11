@@ -18,10 +18,10 @@ export default class GitProfile {
      static fromData(data: any) : GitProfile {
         return new GitProfile(
             data.name,
-            data.followers_url,
-            data.location,
+            Number(data.followers),
+            data.location ?? "no-location",
             data.url,
-            data.avatar_url
+            data.avatar_url,
         )
     }
 }
